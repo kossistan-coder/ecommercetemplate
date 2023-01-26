@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-at-logo-blanc.svg" />
+    <title>Document</title>
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="ui right vertical inverted sidebar  menu">
+        <a class="item">
+          <i class="home icon"></i>
+          Home
+        </a>
+        <a class="item">
+          <i class="block layout icon"></i>
+          Topics
+        </a>
+        <a class="item">
+          <i class="smile icon"></i>
+          Friends
+        </a>
+      </div>
+    <!--Mobile menu-->
+    <div class="ui fixed menu" id="mobile">
+        <div class="header item">
+            <img src="assets/img/at-logo.png" alt="" class="ui small image">
+        </div>
+       <div class="right menu">
+            <div class="item" style="cursor: pointer;" id="bar">
+                <i class="bars icon text-white"></i>
+            </div>
+       </div>
+      </div>
+      <!--Desktop menu-->
+    <div class="bg-black nav">
+        <ul class="grid-3">
+            <li><a href="">
+                <img src="assets/img/at-logo.png" alt="" class="ui small image">
+            </a>
+            </li>
+            <li>
+                <div class="nav-items">
+                    <div class="ui left action input" >
+                        <div class="ui floating right labeled icon dropdown button bg-purple" id="border-left" >
+                            
+                            <span class="text">Categories</span>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="1">Male</div>
+                                <div class="item" data-value="0">Female</div>
+                              </div>
+                          </div>
+                        <input type="text" placeholder="search" id="border-right">
+                    </div>
+                    <div class="btn-search">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </li>
+            <div class="nav-items">
+                <a class="social-icon">
+                    <i class="ui user icon"></i>
+                </a>
+                <a class="social-icon" id="cart-icon">
+                    <span class="ui circular red label" id="badge">3</span>
+                    <i class="shopping basket icon"></i>
+                    <div class="segment-cart">
+                        <div class="ui segment" id="cart">
+                            <div>
+                                <div class="flex">
+                                    <div>X element</div>
+                                    <div>Panier</div>
+                                </div>
+                                <div class="ui divider">
+                                    
+                                </div>
+                                <div class="flex">
+                                        <div>
+                                            <img src="./assets/img/products/product-1.jpg" class="ui small image">
+                                        </div>
+                                        <div>
+                                           <h2 class="ui sub header" style="width:50px;">
+                                              Ecouteur
+                                            </h2>
+                                            <span>$10.99</span>
+                                        </div>
+                                        <div>
+                                            <i class="close icon"></i>
+                                        </div>
+                                    </div>
+                            <div>
+                                <button class="ui fluid purple button">
+                                    Panier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a class="social-icon">
+                    <i class="facebook f icon"></i>
+                </a>
+                    <a class="social-icon">
+                        <i class="instagram icon"></i>
+                    </a>
+            </div>
+        </ul>
+        <div class="txt-green">
+            <div class="ui six secondary borderless item menu" id="second-menu">
+                <a class="item" id="show-blur">Editorials</a>
+                <a class="item">Reviews</a>
+                <a class="item">Editorials</a>
+                <a class="item">Reviews</a>
+                <a class="item">Reviews</a>
+                <a class="item active">Upcoming Events</a>
+              </div>
+
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui segment" id="blur-segment">
+            <div class="grid-half">
+                <div class="ui vertical secondary menu" id="products">
+                     <a class="active item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="flex-inline">
+                            <div class="white-label"></div>
+                            <div>Uncoming Game</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="grid-4">
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="center">
+                                <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                <div class="text-white">
+                                    PC GAMERS
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+       <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <div  alt="" style="background-image: url('./assets/img/hero/slider-bg1.jpg');width: 100%; height: 450px;border-radius: 10px;">
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div  alt="" style="background-image: url('./assets/img/hero/slider-bg2.jpg');width: 100%; height: 450px;border-radius: 10px;"></div>
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
+</div> 
+    </nav>
+
+    <article class="back-1">
+        <div class="divider">
+            <div class="trait" style="width: 20%;"></div>
+            <h3>BEST SELLERS MOMENT</h3>
+            <div class="trait" style="width: 55%;"></div>
+        </div>
+        <section class="ui container">
+            <div class="grid-4">
+                <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--2 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--3 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-2.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--4 ieme card-->
+
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-3.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>35 000 XOF</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+    </article>
+    <!--Article 2-->
+    <article class="back-2">
+        <div class="divider">
+            <div class="trait-1" style="width: 20%;"></div>
+            <h3 style="color: white;">UNIVERS GAMING</h3>
+            <div class="trait-1" style="width: 55%;"></div>
+        </div>
+        <div class="banner">
+
+        </div>
+        <section class="ui container">
+            <div class="grid-4">
+                <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--2 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--3 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-2.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--4 ieme card-->
+
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-3.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>35 000 XOF</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+    </article>
+    <!--article 3-->
+
+    <article class="back-1">
+        <div class="divider">
+            <div class="trait" style="width: 20%;"></div>
+            <h3>PRODUITS APPLE</h3>
+            <div class="trait" style="width: 55%;"></div>
+        </div>
+        <section class="ui container">
+            <div class="grid-4">
+                <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--2 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-1.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--3 ieme card-->
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-2.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--4 ieme card-->
+
+                  <div class="ui fluid card">
+                    <a class="image" href="#" >
+                        <img src="./assets/img/products/product-3.jpg" alt="">
+                       
+                    </a>
+                    <div class="ui btn hidden ">
+                        <div class="flex-center">
+                            
+                            <div class="ui segment">
+                                <a href="">
+                                    <i class="cart icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="eye icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="heart outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content">
+                      <a class="header" href="#">Steve Jobes</a>
+                      <div class="meta">
+                        <a>35 000 XOF</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+    </article>
+    <footer class="back-3">
+        <div class="ui container">
+            <div class="flex">
+                <div>
+                    <img src="assets/img/at-logo.png" alt="" class="ui medium image">
+                </div>
+                
+                <div class="pade-1"> 
+                    <h2 class="ui header " style="color: white;">
+                        Abonnez vous à notre news letters
+                        <div class="sub header" style="color: white;">Obtenez toutes les dernieres informations , ventes et offres</div>
+                      </h2>
+                   <div id="btn-pade">
+                    <div class="ui input">
+                        <input type="text" placeholder="Search..." style="background-color: rgb(66, 66, 66);">
+                      </div>
+                      
+                      <div class="ui purple button" >
+                        S'abonner
+                      </div>
+                   </div>
+                </div>
+            </div>
+            <br>
+           <div class="trait-2"></div>
+           <br>
+           <div class="grid-4-ext">
+                <div>
+                    <p class="bg-text-white">
+                        Get in Touch With us
+                    </p>
+                    <div class="trait-purple"></div>
+                    <br>
+                    <p class="phone text-white">Téléphone: +1 (900) 33 169 7720</p>
+                        <p class="text-white"><span>Monday-Friday: </span> 9.00 am - 8.00 pm</p>
+                        <p class="text-white"><span>Saturday: </span> 10.00 am - 6.00 pm</p>
+                    <p class="mail text-white">
+                        <a href="mailto:support@shopgrids.com" class="text-white">support@shopgrids.com</a>
+                    </p>
+                </div>
+                <div >
+                    <p class="bg-text-white" id="marge-1">
+                        Votre app mobile
+                    </p>
+                    <div class="trait-purple"></div>
+                    <div class="btn-hover">
+                        <i class="apple big icon"></i>
+                        <div>Télécharger sur l'app playstore</div>
+                    </div>
+                    <div class="btn-hover">
+                        <i class="google play icon"></i>
+                        <div>Télécharger sur Google play</div>
+                    </div>
+                </div>
+                <div >
+                    <p class="bg-text-white" id="marge">
+                        Information
+                    </p>
+                    <div class="trait-purple"></div>
+                    <br>
+                    <p ><a class="text-white" href="javascript:void(0)">A propos De Nous</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Contacter Nous</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Downloads</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Sitemap</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">FAQs Page</a></p>
+                </div>
+                <div >
+                    <p class="bg-text-white" id="marge">
+                        Shop Departements
+                    </p>
+                    <div class="trait-purple"></div>
+                    <br>
+                    <p ><a class="text-white" href="javascript:void(0)">Computers & Accessories</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Smartphones & Tablets</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">TV, Video & Audio</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Cameras, Photo & Video</a></p>
+                    <p ><a class="text-white" href="javascript:void(0)">Headphones</a></p>
+                </div>
+           </div>
+           <br>
+           <div class="trait-2"></div>
+           <br>
+           <div class="grid-3">
+                <div>
+                    <div class="nav-items">
+                        <span class="text-white">Nous acceptons : </span> 
+                        <img src="./assets/footer/credit-cards-footer.png" alt="" class="ui small image" id="mg-2">
+                    </div>
+                </div>
+                <div>
+                    <span class="text-white">Designed and Developed byGrayGrids</span>
+                </div>
+                <div>
+                    <div class="nav-items">
+                        <span class="text-white">
+                            Suivez nous : 
+                        </span>
+                        <span class="text-white">
+                            <i class="facebook f icon"></i>
+                        </span>
+                        <span class="text-white">
+                            <i class="twitter icon"></i>
+                        </span>
+                        <span class="text-white">
+                            <i class="instagram icon"></i>
+                        </span>
+                            <span class="text-white">
+                                <i class="google icon"></i>
+                            </span>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+   
+</body>
+<script src="jquery.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script src="semantic/components/dropdown.min.js"></script>
+<script src="semantic/components/accordion.min.js"></script>
+<script type="text/javascript" src="semantic/components/tab.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+let show_blur = document.getElementById('show-blur');
+let blur_segment = document.getElementById('blur-segment')
+let nav = document.querySelector('.nav')
+hover = false ;
+show_blur.addEventListener('mouseenter',()=>{
+    hover = true ;
+   blur_segment.style.display = "block"
+})
+show_blur.addEventListener('mouseleave',()=>{
+    hover = !hover
+   if(!hover){
+    blur_segment.style.display = "block"
+   }
+})
+blur_segment.addEventListener('mouseenter',()=>{
+    hover = true
+   blur_segment.style.display = "block"
+})
+blur_segment.addEventListener('mouseleave',()=>{
+    hover = false;
+    blur_segment.style.display = "none";
+})
+nav.addEventListener('mouseleave',()=>{
+    hover = false
+    blur_segment.style.display = "none";
+})
+
+    $(document).ready(function name(params) {
+        $('.segment-cart').hide();
+        $('.ui.dropdown')
+        .dropdown()
+        ;
+
+        $('#bar').click(()=>{
+            $('.ui.sidebar')
+        .sidebar('toggle')
+        ;
+        })
+
+        $('#cart-icon').mouseenter(()=>{
+            $('.segment-cart').show()
+        })
+         $('#cart-icon').mouseleave(()=>{
+            $('.segment-cart').hide()
+        })
+
+         $('.menu .item')
+          .tab()
+        ;
+    })
+</script>
+</html>
