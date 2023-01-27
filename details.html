@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="lineIcons/lineicons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-at-logo-blanc.svg" />
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="ui vertical inverted sidebar  menu">
+            <h2 class="item header">
+                <img src="assets/img/at-logo.png" alt="" class="ui small image">
+            </h2>
+            <a class="item">
+              <i class="home icon"></i>
+              Home
+            </a>
+            <a class="item">
+              <i class="block layout icon"></i>
+              Topics
+            </a>
+            <a class="item">
+              <i class="smile icon"></i>
+              Friends
+            </a>
+          </div>
+        <!--Mobile menu-->
+        <div class="ui fixed menu" id="mobile">
+            <div class="header item">
+                <div class="item" style="cursor: pointer;" id="bar">
+                    <i class="bars icon text-white"></i>
+                </div>
+            </div>
+           <div class="right menu">
+                <div class="ui dropdown item">
+                    <i class="lni-user lni" style="font-size: 2em;color:white;cursor:pointer"></i>
+                     <div class="menu">
+            <a class="item">Panier</a>
+            <a class="item">Russian</a>
+            <a class="item">Spanish</a></div>
+                </div>
+           </div>
+          </div>
+          <!--Desktop menu-->
+        <div class="bg-black nav">
+            <ul class="grid-3">
+                <li><a href="">
+                    <img src="assets/img/at-logo.png" alt="" class="ui small image">
+                </a>
+                </li>
+                <li>
+                    <div class="nav-items">
+                        <div class="ui left action input" >
+                            <div class="ui floating right labeled icon dropdown button bg-purple" id="border-left" >
+                                
+                                <span class="text">Categories</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="1">Male</div>
+                                    <div class="item" data-value="0">Female</div>
+                                  </div>
+                              </div>
+                            <input type="text" placeholder="search" id="border-right">
+                        </div>
+                        <div class="btn-search">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="nav-items">
+                    <a class="social-icon">
+                        <i class="lni lni-user"></i>
+                    </a>
+                    <a class="social-icon" id="cart-icon">
+                        <span class="ui circular red label" id="badge">3</span>
+                        <i class="lni lni-shopping-basket"></i>
+                        <div class="segment-cart">
+                            <div class="ui segment" id="cart">
+                                <div>
+                                    <div class="flex">
+                                        <div>X element</div>
+                                        <div>Panier</div>
+                                    </div>
+                                    <div class="ui divider">
+                                        
+                                    </div>
+                                    <div class="flex">
+                                            <div>
+                                                <img src="./assets/img/products/product-1.jpg" class="ui small image">
+                                            </div>
+                                            <div>
+                                               <h2 class="ui sub header" style="width:50px;">
+                                                  Ecouteur
+                                                </h2>
+                                                <span>$10.99</span>
+                                            </div>
+                                            <div>
+                                                <i class=" lni lni-close"></i>
+                                            </div>
+                                        </div>
+                                <div>
+                                    <button class="ui fluid purple button">
+                                        Panier
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </a>
+                    <a class="social-icon">
+                        <i class="lni lni-facebook-fill"></i>
+                    </a>
+                        <a class="social-icon">
+                            <i class="lni lni-instagram-fill"></i>
+                        </a>
+                </div>
+            </ul>
+            <div class="txt-green">
+                <div class=" ui container">
+                    <div class="ui six secondary borderless item menu" id="second-menu">
+                        <a class="item" id="show-blur">Editorials</a>
+                        <a class="item">Reviews</a>
+                        <a class="item">Editorials</a>
+                        <a class="item">Reviews</a>
+                        <a class="item">Reviews</a>
+                        <a class="item active">Upcoming Events</a>
+                      </div>
+        
+                </div>
+            </div>
+        </div>
+        <div class="ui container">
+            <div class="ui segment" id="blur-segment">
+                <div class="grid-half">
+                    <div class="ui vertical secondary menu" id="products">
+                         <a class="active item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                        <a class="item">
+                            <div class="flex-inline">
+                                <div class="white-label"></div>
+                                <div>Uncoming Game</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="grid-4">
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="center">
+                                    <img src="./assets/img/products/product-2.jpg" class="ui small image">
+                                    <div class="text-white">
+                                        PC GAMERS
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+    </header>
+    <article class="ui container ">
+        <br>
+        <div class="grid-ineq">
+            <div class="product-card" style="width:100%">
+                <div class="grid-ineq-1" >
+                    <div>
+                        <div class="flex-row" style="padding-top: 12px;">
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-1.jpg" class="ui tiny image" alt="">
+                            </div>
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-2.jpg" class="ui tiny image" alt="">
+                            </div>
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-2.jpg" class="ui tiny image" alt="">
+                            </div>
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-3.jpg" class="ui tiny image" alt="">
+                            </div>
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-7.jpg" class="ui tiny image" alt="">
+                            </div>
+                            <div class="img-card">
+                                <img src="./assets/img/products/product-7.jpg" class="ui tiny image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <img src="./assets/img/products/product-5.jpg" class="ui fluid image" alt="">
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="ui header" style="padding: 10px;">
+                    <span class="col-green">
+                        Originals Kaval Windbr
+                    </span>
+                </div>
+                <div>
+                    <i class="lni lni-star-fill " style="color: #8c4ad8;"></i>
+                    <i class="lni lni-star-fill " style="color: #8c4ad8;"></i>
+                    <i class="lni lni-star-fill " style="color: #8c4ad8;"></i>
+                    <i class="lni lni-star-fill " style="color: #8c4ad8;"></i>
+                    <i class="lni lni-star-empty " ></i>
+                    <span>(5 VOTES)</span>
+                </div>
+                <div class="ui header">
+                    23 000F CFA
+                </div>
+                <div class="ui divider"></div>
+                <div>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum nulla minima eveniet iste aut beatae asperiores, reiciendis in adipisci doloremque unde explicabo eligendi, temporibus error, nostrum magnam similique? Dolore.
+                    </span>
+                </div>
+                <div class="ui divider"></div>
+               <div id="cart-button">
+                <div>
+                    <a class="ui big circular label">
+                        -
+                    </a> 
+                    <div class="ui big circular purple label">
+                        1
+                    </div>
+                    <a class="ui big circular label">
+                        +
+                    </a>
+                </div>
+                <div class="ui purple circular icon button">
+                    AJOUTER
+                    <i class="lni-cart-full lni"></i>
+                </div>
+               </div>
+                <div class="ui divider"></div>
+                <div class="ui big circular icon label">
+                    <i class="lni-heart-fill lni"></i>
+                </div>
+                <div class="ui big circular icon label">
+                    <i class="lni-share lni"></i>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="jquery.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script src="semantic/components/dropdown.min.js"></script>
+<script src="semantic/components/accordion.min.js"></script>
+<script type="text/javascript" src="semantic/components/tab.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
+<script src="./animated.js"></script>
+</html>

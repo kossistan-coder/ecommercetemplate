@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="semantic/semantic.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="lineIcons/lineicons.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-at-logo-blanc.svg" />
     <title>Document</title>
 </head>
 <body>
     <!--Sidebar-->
-    <div class="ui right vertical inverted sidebar  menu">
+    <div class="ui left vertical inverted sidebar  menu">
+        <h2 class="header item">
+            <img src="assets/img/at-logo.png" alt="" class="ui small image">
+        </h2>
         <a class="item">
           <i class="home icon"></i>
           Home
@@ -29,11 +33,17 @@
     <!--Mobile menu-->
     <div class="ui fixed menu" id="mobile">
         <div class="header item">
-            <img src="assets/img/at-logo.png" alt="" class="ui small image">
-        </div>
-       <div class="right menu">
             <div class="item" style="cursor: pointer;" id="bar">
                 <i class="bars icon text-white"></i>
+            </div>
+        </div>
+       <div class="right menu">
+            <div class="ui dropdown item">
+                <i class="lni-user lni" style="font-size: 2em;color:white;cursor:pointer"></i>
+                 <div class="menu">
+        <a class="item">Panier</a>
+        <a class="item">Russian</a>
+        <a class="item">Spanish</a></div>
             </div>
        </div>
       </div>
@@ -65,11 +75,11 @@
             </li>
             <div class="nav-items">
                 <a class="social-icon">
-                    <i class="ui user icon"></i>
+                    <i class="lni lni-user"></i>
                 </a>
                 <a class="social-icon" id="cart-icon">
                     <span class="ui circular red label" id="badge">3</span>
-                    <i class="shopping basket icon"></i>
+                    <i class="lni lni-shopping-basket"></i>
                     <div class="segment-cart">
                         <div class="ui segment" id="cart">
                             <div>
@@ -91,7 +101,7 @@
                                             <span>$10.99</span>
                                         </div>
                                         <div>
-                                            <i class="close icon"></i>
+                                            <i class=" lni lni-close"></i>
                                         </div>
                                     </div>
                             <div>
@@ -104,23 +114,25 @@
                     </div>
                 </a>
                 <a class="social-icon">
-                    <i class="facebook f icon"></i>
+                    <i class="lni lni-facebook-fill"></i>
                 </a>
                     <a class="social-icon">
-                        <i class="instagram icon"></i>
+                        <i class="lni lni-instagram-fill"></i>
                     </a>
             </div>
         </ul>
         <div class="txt-green">
-            <div class="ui six secondary borderless item menu" id="second-menu">
-                <a class="item" id="show-blur">Editorials</a>
-                <a class="item">Reviews</a>
-                <a class="item">Editorials</a>
-                <a class="item">Reviews</a>
-                <a class="item">Reviews</a>
-                <a class="item active">Upcoming Events</a>
-              </div>
-
+            <div class=" ui container">
+                <div class="ui six secondary borderless item menu" id="second-menu">
+                    <a class="item" id="show-blur">Editorials</a>
+                    <a class="item">Reviews</a>
+                    <a class="item">Editorials</a>
+                    <a class="item">Reviews</a>
+                    <a class="item">Reviews</a>
+                    <a class="item active">Upcoming Events</a>
+                  </div>
+    
+            </div>
         </div>
     </div>
     <div class="ui container">
@@ -245,15 +257,56 @@
     <nav>
        <!-- Slider main container -->
 <div class="swiper">
+   
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-        <div  alt="" style="background-image: url('./assets/img/hero/slider-bg1.jpg');width: 100%; height: 450px;border-radius: 10px;">
+        <div  alt="" style="background-image: url('./assets/img/pexel2.jpg');width: 100%; height: 450px; background-repeat:no-repeat;background-position:center center;" class="slider">
+            <div class="flex-auto">
+                <div>
+                    <h2 class="ui header" style="font-size: 2.8em;">
+                        Account Settings
+                        <div class="sub header" >Manage your account settings and set e-mail preferences.</div>
+                      </h2>
+                      <div class="ui purple huge button">
+                        Découvrir
+                      </div>
+                </div>
+            </div>
+            <div class="flex-btn">
+                <div class="ui circular massive purple  icon button" id="left">
+                    <i class=" lni lni-arrow-left"></i>
+                  </div>
+                  <div class="ui circular massive purple  icon button" id="right">
+                     <i class=" lni lni-arrow-right"></i>
+                   </div>
+            </div>
         </div>
     </div>
     <div class="swiper-slide">
-        <div  alt="" style="background-image: url('./assets/img/hero/slider-bg2.jpg');width: 100%; height: 450px;border-radius: 10px;"></div>
+        <div  alt="" style="background-image: url('./assets/img/pexel1.jpg');width: 100%; height: 450px; background-repeat:no-repeat;background-position:center center;" class="slider">
+            <div class="flex-auto">
+                <div>
+                    <h2 class="ui header" style="font-size: 2.8em;">
+                        Account Settings
+                        <div class="sub header" style="color: white;">Manage your account settings and set e-mail preferences.</div>
+                        <div class="sub header" style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, atque quaerat vero ad error nisi eveniet quia vitae repellendus delectus fugit officiis est labore totam dolorum necessitatibus temporibus quasi rerum..</div>
+                      </h2>
+                      <div class="ui purple huge button">
+                        Découvrir
+                      </div>
+                </div>
+            </div>
+            <div class="flex-btn">
+                <div class="ui circular massive purple icon button" id="left">
+                    <i class=" lni lni-arrow-left"></i>
+                  </div>
+                  <div class="ui circular massive purple icon button" id="right" >
+                     <i class=" lni lni-arrow-right"></i>
+                   </div>
+            </div>
+        </div>
     </div>
     ...
   </div>
@@ -261,11 +314,11 @@
   <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+ 
 
 
 </div> 
+ 
     </nav>
 
     <article class="back-1">
@@ -277,26 +330,23 @@
         <section class="ui container">
             <div class="grid-4">
                 <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -306,26 +356,23 @@
                   </div>
                   <!--2 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -335,26 +382,23 @@
                   </div>
                   <!--3 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-2.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -365,26 +409,23 @@
                   <!--4 ieme card-->
 
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-3.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -409,26 +450,23 @@
         <section class="ui container">
             <div class="grid-4">
                 <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -438,26 +476,23 @@
                   </div>
                   <!--2 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -467,26 +502,23 @@
                   </div>
                   <!--3 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-2.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -497,26 +529,23 @@
                   <!--4 ieme card-->
 
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-3.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -539,26 +568,23 @@
         <section class="ui container">
             <div class="grid-4">
                 <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -568,26 +594,23 @@
                   </div>
                   <!--2 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -597,26 +620,23 @@
                   </div>
                   <!--3 ieme card-->
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-2.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -627,26 +647,23 @@
                   <!--4 ieme card-->
 
                   <div class="ui fluid card">
-                    <a class="image" href="#" >
+                    <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-3.jpg" alt="">
                        
                     </a>
                     <div class="ui btn hidden ">
-                        <div class="flex-center">
-                            
-                            <div class="ui segment">
-                                <a href="">
-                                    <i class="cart icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="eye icon"></i>
-                                </a>
-                                <a href="">
-                                    <i class="heart outline icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
+                        <div class="ui borderless menu" id="dimmer">
+                            <a class="active item">
+                                <i class="lni lni-shopping-basket"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-eye"></i>
+                            </a>
+                            <a class="item">
+                                <i class="lni lni-heart"></i>
+                            </a>
+                          </div>
+                    </div>
                     <div class="content">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
@@ -780,75 +797,8 @@
 <script src="semantic/components/accordion.min.js"></script>
 <script type="text/javascript" src="semantic/components/tab.min.js"></script>
 <script src="swiper-bundle.min.js"></script>
+<script src="./animated.js"></script>
 <script>
-    const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-
-});
-let show_blur = document.getElementById('show-blur');
-let blur_segment = document.getElementById('blur-segment')
-let nav = document.querySelector('.nav')
-hover = false ;
-show_blur.addEventListener('mouseenter',()=>{
-    hover = true ;
-   blur_segment.style.display = "block"
-})
-show_blur.addEventListener('mouseleave',()=>{
-    hover = !hover
-   if(!hover){
-    blur_segment.style.display = "block"
-   }
-})
-blur_segment.addEventListener('mouseenter',()=>{
-    hover = true
-   blur_segment.style.display = "block"
-})
-blur_segment.addEventListener('mouseleave',()=>{
-    hover = false;
-    blur_segment.style.display = "none";
-})
-nav.addEventListener('mouseleave',()=>{
-    hover = false
-    blur_segment.style.display = "none";
-})
-
-    $(document).ready(function name(params) {
-        $('.segment-cart').hide();
-        $('.ui.dropdown')
-        .dropdown()
-        ;
-
-        $('#bar').click(()=>{
-            $('.ui.sidebar')
-        .sidebar('toggle')
-        ;
-        })
-
-        $('#cart-icon').mouseenter(()=>{
-            $('.segment-cart').show()
-        })
-         $('#cart-icon').mouseleave(()=>{
-            $('.segment-cart').hide()
-        })
-
-         $('.menu .item')
-          .tab()
-        ;
-    })
 </script>
 </html>
