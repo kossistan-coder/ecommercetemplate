@@ -92,7 +92,7 @@
     z-index: 100;
     position: absolute;
    display: none;
-   width: 100%;
+   width: 90%;
 }
 .none{
     display: none;
@@ -222,6 +222,10 @@
     background-color: white;
     padding: 5px;
     border-radius: 10px;
+   
+}
+.img-border img{
+    border-radius: 10px;width: 240px !important;height: 110px;
 
 }
 
