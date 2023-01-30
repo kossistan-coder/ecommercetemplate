@@ -92,6 +92,7 @@
     z-index: 100;
     position: absolute;
    display: none;
+   width: 100%;
 }
 .none{
     display: none;
@@ -176,6 +177,7 @@
     text-align: center;
     margin-left: 10px;
     width: 70px;
+    background-color: transparent;
     cursor: pointer;
 }
 .btn-search:hover{
@@ -220,6 +222,7 @@
     background-color: white;
     padding: 5px;
     border-radius: 10px;
+
 }
 
  .flex-middle{
@@ -259,6 +262,15 @@
     display: flex;
     justify-content: center;
 }
+.ui.fluid.card{
+    box-shadow: none;
+    border: 1px solid white;
+}
+#bg-black{
+    background-color: rgb(34, 34, 34);
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
 .back-1{
     background-color: #eceef0;
     width: 100%;
@@ -296,7 +308,7 @@
 .grid-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 25px;
     align-items: baseline;
 }
 .grid-4-ext{
@@ -308,8 +320,10 @@
 .divider{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: flex-start;
    align-items: baseline;
+   column-gap: 5px;
+   
 }
 .trait{
     background-color: black !important;
@@ -318,9 +332,9 @@
   border-width: 10px;
 }
 .trait-1{
-    background-color: white !important;
+    background-color: #6eb325 !important;
   height: 2px !important;
-  color: white;
+  color: #6eb325;
   border-width: 10px;
 }
 .trait-2{
@@ -331,10 +345,8 @@
 }
 .banner{
     background-image: url("../img/hero/banner-3-bg.jpg");
-    background-position: center ;
-  
+    background-position: center ; 
     height: 150px;
-    
     border-radius: 20px;
 }
 .flex-btn{
@@ -439,7 +451,7 @@
     background-color: #8c4ad8;
     color: white;
 }
-.ui.fluid.card .content .header:hover{
+.ui.fluid.card .content .header{
     color: rgb(196, 195, 195);
 }
 .ui.fluid.card .content .meta a{
@@ -477,8 +489,9 @@
 .img-card{
     background-color: white;
     padding: 10px;
+    margin-right: 5px;
     border-radius: 5px;
-    width: 60px;
+
 }
 .product-card{
     background-color: #f0f1fa;
@@ -519,14 +532,14 @@
     
 }
 
-@media screen and (min-width : 426px) and (max-width : 800px) {
+@media screen and (min-width : 426px) and (max-width : 995px) {
     .grid-4{
         grid-template-columns: 1fr 1fr;
         
     }
     
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:506px) {
     .grid-4{
         grid-template-columns: 1fr;
     }

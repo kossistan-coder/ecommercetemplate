@@ -7,9 +7,13 @@ let slider = document.querySelectorAll('.slider')
 let borderLeft = document.getElementById('border-left');
 let img_border = document.querySelectorAll('.img-border')
 let f_bold = document.querySelector('.img-border .text-white.f-bold');
-
+let btn_search = document.querySelector('.btn-search')
+let category = document.getElementById('category')
 let cart_icon = document.getElementById('cart-icon')
 let segment_cart = document.querySelector('.segment-cart')
+// btn_search.addEventListener('click',()=>{
+//     alert(category.value)
+// })
  img_border.forEach((element)=>{
     element.addEventListener('mouseenter',()=>{
         element.style.backgroundColor = '#6eb325'

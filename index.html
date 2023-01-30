@@ -55,22 +55,26 @@
             </a>
             </li>
             <li>
-                <div class="nav-items">
-                    <div class="ui left action input" >
-                        <div class="ui floating right labeled icon dropdown button bg-purple" id="border-left" >
+                <div >
+                    <form action="" method="post" class="nav-items">
+                        <div class="ui left action input" >
+                            <div class="ui floating right labeled icon dropdown button bg-purple" id="border-left" >
+                                
+                                <input type="hidden" name="gender" id="category"><!--C'est ce champ que tu dois utilisé-->
+                                <span class="text">Categories</span>
                             
-                            <span class="text">Categories</span>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                                <div class="item" data-value="1">Male</div>
-                                <div class="item" data-value="0">Female</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                  <div class="item" data-value="poulet congélé">poulet congelé</div>
+                                  <div class="item" data-value="sodabi">sodabi</div>
+                                </div>
                               </div>
-                          </div>
-                        <input type="text" placeholder="search" id="border-right">
-                    </div>
-                    <div class="btn-search">
-                        <i class="search icon"></i>
-                    </div>
+                            <input type="text" placeholder="search" id="border-right">
+                        </div>
+                        <button class="btn-search" type="submit" >
+                            <i class="search icon"></i>
+                        </button>
+                    </form>
                 </div>
             </li>
             <div class="nav-items">
@@ -135,7 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="ui container">
+    <div style="padding-left:5px">
         <div class="ui segment" id="blur-segment">
             <div class="grid-half">
                 <div class="ui vertical secondary menu" id="products">
@@ -187,7 +191,7 @@
                         <div>
                             <div class="center">
                                 <div class=" img-border">
-                                    <img src="./assets/img/products/product-2.jpg" class="ui small image" style="border-radius: 10px;">
+                                    <img src="./assets/img/products/product-2.jpg"      >
                                     
                                 </div>
                                 <div class="text-white f-bold">
@@ -198,7 +202,7 @@
                         <div>
                             <div class="center">
                                 <div class=" img-border">
-                                    <img src="./assets/img/products/product-2.jpg" class="ui small image" style="border-radius: 10px;">
+                                    <img src="./assets/img/products/product-2.jpg"  style="border-radius: 10px;width: 230px;height: 110px;">
                                     
                                 </div>
                                 <div class="text-white f-bold">
@@ -209,7 +213,7 @@
                         <div>
                             <div class="center">
                                 <div class=" img-border">
-                                    <img src="./assets/img/products/product-2.jpg" class="ui small image" style="border-radius: 10px;">
+                                    <img src="./assets/img/products/product-2.jpg" style="border-radius: 10px;width: 230px;height: 110px;">
                                     
                                 </div>
                                 <div class="text-white f-bold">
@@ -220,7 +224,7 @@
                         <div>
                             <div class="center">
                                 <div class=" img-border">
-                                    <img src="./assets/img/products/product-2.jpg" class="ui small image" style="border-radius: 10px;">
+                                    <img src="./assets/img/products/product-2.jpg" style="border-radius: 10px;width: 230px;height: 110px;">
                                     
                                 </div>
                                 <div class="text-white f-bold">
@@ -308,13 +312,13 @@
 
     <article class="back-1">
         <div class="divider">
-            <div class="trait" style="width: 20%;"></div>
-            <h3>BEST SELLERS MOMENT</h3>
-            <div class="trait" style="width: 55%;"></div>
+            <div class="trait" style="width: 4%;"></div>
+            <h5>BEST SELLERS MOMENT</h5>
+            <div class="trait" style="width: 82%;"></div>
         </div>
-        <section class="ui container">
+        <section >
             <div class="grid-4">
-                <div class="ui fluid card">
+                <div class="ui fluid card" style="border: 1px solid rgb(202, 202, 202) !important;">
                     <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
@@ -333,7 +337,7 @@
                           </div>
                     </div>
                     
-                    <div class="content">
+                    <div class="content" style="background-color: #eceef0;">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
@@ -341,7 +345,7 @@
                     </div>
                   </div>
                   <!--2 ieme card-->
-                  <div class="ui fluid card">
+                  <div class="ui fluid card" style="border: 1px solid rgb(202, 202, 202) !important;">
                     <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-1.jpg" alt="">
                        
@@ -359,7 +363,7 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
+                    <div class="content" style="background-color: #eceef0;">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
@@ -367,7 +371,7 @@
                     </div>
                   </div>
                   <!--3 ieme card-->
-                  <div class="ui fluid card">
+                  <div class="ui fluid card" style="border: 1px solid rgb(202, 202, 202) !important;">
                     <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-2.jpg" alt="">
                        
@@ -385,7 +389,7 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
+                    <div class="content" style="background-color: #eceef0;">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
@@ -394,7 +398,7 @@
                   </div>
                   <!--4 ieme card-->
 
-                  <div class="ui fluid card">
+                  <div class="ui fluid card" style="border: 1px solid rgb(202, 202, 202) !important;">
                     <a class="image" href="details.html" >
                         <img src="./assets/img/products/product-3.jpg" alt="">
                        
@@ -412,7 +416,7 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
+                    <div class="content" style="background-color: #eceef0;">
                       <a class="header" href="#">Steve Jobes</a>
                       <div class="meta">
                         <a>35 000 XOF</a>
@@ -425,17 +429,21 @@
     </article>
     <!--Article 2-->
     <article class="back-2">
+       <div>
         <div class="divider">
-            <div class="trait-1" style="width: 20%;"></div>
-            <h3 style="color: white;">UNIVERS GAMING</h3>
-            <div class="trait-1" style="width: 55%;"></div>
+            <div class="trait-1" style="width: 6%;"></div>
+            <h5 style="color:#6eb325;">UNIVERS GAMING</h5>
+            <div class="trait-1" style="width: 84%;"></div>
         </div>
-       <div class="ui container">
+       </div>
+       <div >
+       <div style="background-color: #6eb325; border-color: 1px #6eb325 solid; padding: 1px;border-radius: 20px;">
         <div class="banner">
 
         </div>
        </div>
-        <section class="ui container">
+       </div>
+        <section>
             <div class="grid-4">
                 <div class="ui fluid card">
                     <a class="image" href="details.html" >
@@ -455,8 +463,8 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
-                      <a class="header" href="#">Steve Jobes</a>
+                    <div class="content" id="bg-black">
+                        <a class="header" href="#">DELL G5-5521 édition</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
                       </div>
@@ -481,8 +489,8 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
-                      <a class="header" href="#">Steve Jobes</a>
+                    <div class="content" id="bg-black">
+                        <a class="header" href="#">DELL G5-5521 édition</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
                       </div>
@@ -507,8 +515,8 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
-                      <a class="header" href="#">Steve Jobes</a>
+                    <div class="content" id="bg-black">
+                        <a class="header" href="#">DELL G5-5521 édition</a>
                       <div class="meta">
                         <a>Last Seen 2 days ago</a>
                       </div>
@@ -534,8 +542,8 @@
                             </a>
                           </div>
                     </div>
-                    <div class="content">
-                      <a class="header" href="#">Steve Jobes</a>
+                    <div class="content" id="bg-black">
+                      <a class="header" href="#">DELL G5-5521 édition</a>
                       <div class="meta">
                         <a>35 000 XOF</a>
                       </div>
@@ -549,11 +557,11 @@
 
     <article class="back-1">
         <div class="divider">
-            <div class="trait" style="width: 20%;"></div>
-            <h3>PRODUITS APPLE</h3>
-            <div class="trait" style="width: 55%;"></div>
+            <div class="trait" style="width: 10%;"></div>
+            <h5>PRODUITS APPLE</h5>
+            <div class="trait" style="width: 80%;"></div>
         </div>
-        <section class="ui container">
+        <section >
             <div class="grid-4">
                 <div class="ui fluid card">
                     <a class="image" href="details.html" >
@@ -664,7 +672,7 @@
         
     </article>
     <footer class="back-3">
-        <div class="ui container">
+        <div >
             <div class="flex">
                 <div>
                     <img src="assets/img/at-logo.png" alt="" class="ui medium image">
