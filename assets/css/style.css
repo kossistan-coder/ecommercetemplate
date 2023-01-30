@@ -135,7 +135,7 @@
 .grid-half{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    column-gap: 20px;
+    column-gap: 5px;
 }
 #cart{
     min-width: 350px;
