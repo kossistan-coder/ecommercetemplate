@@ -5,6 +5,23 @@ let left = document.querySelectorAll('#left')
 let right = document.querySelectorAll('#right')
 let slider = document.querySelectorAll('.slider')
 let borderLeft = document.getElementById('border-left');
+let img_border = document.querySelectorAll('.img-border')
+let f_bold = document.querySelector('.img-border .text-white.f-bold');
+
+let cart_icon = document.getElementById('cart-icon')
+let segment_cart = document.querySelector('.segment-cart')
+ img_border.forEach((element)=>{
+    element.addEventListener('mouseenter',()=>{
+        element.style.backgroundColor = '#6eb325'
+        element.nextElementSibling.style.color = '#6eb325';
+       })
+ })
+img_border.forEach((element)=>{
+    element.addEventListener('mouseleave',()=>{
+        element.style.backgroundColor = "initial"
+        element.nextElementSibling.style.color = "white"
+       })
+})
 borderLeft.addEventListener('click',()=>{
     borderLeft.style.backgroundColor = "#8c4ad8"
     borderLeft.style.color = "white"
@@ -57,6 +74,32 @@ nav.addEventListener('mouseleave',()=>{
     hover = false
     blur_segment.style.display = "none";
 })
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  let enter = 0 ; //utiliser pour detecter les etapes sur l'icon cart du panier
+cart_icon.addEventListener('mouseenter',()=>{
+    enter = 1 ;
+    segment_cart.style.display = "block"
+})
+cart_icon.addEventListener('mouseleave',async ()=>{
+   if(enter == 0){
+    await delay(2000)
+    segment_cart.style.display = "none"
+   }
+})
+
+segment_cart.addEventListener('mouseenter',()=>{
+    enter = 2 ;
+     segment_cart.style.display = "block"
+});
+segment_cart.addEventListener('mouseleave',async ()=>{
+
+    await delay(500)
+    segment_cart.style.display = "none"
+    enter = 0;
+});
+
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -91,12 +134,13 @@ const swiper = new Swiper('.swiper', {
           ;
           })
   
-          $('#cart-icon').mouseenter(()=>{
-              $('.segment-cart').show()
-          })
-           $('#cart-icon').mouseleave(()=>{
-              $('.segment-cart').hide()
-          })
+        //   $('#cart-icon').mouseenter(()=>{
+        //     $('.segment-cart').transition = '1s'
+        //       $('.segment-cart').toggle()
+        //   })
+        //    $('#cart-icon').mouseleave(()=>{
+        //       $('.segment-cart').toggle()
+        //   })
   
            $('.menu .item')
             .tab()
