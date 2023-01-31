@@ -11,9 +11,19 @@ let btn_search = document.querySelector('.btn-search')
 let category = document.getElementById('category')
 let cart_icon = document.getElementById('cart-icon')
 let segment_cart = document.querySelector('.segment-cart')
+let img_card = document.querySelectorAll('.img-card')
+let preview = document.getElementById('preview')
 // btn_search.addEventListener('click',()=>{
 //     alert(category.value)
 // })
+preview.setAttribute('src',img_card.item(0).children.item(0).getAttribute('src'))
+img_card.forEach((element)=>{
+    element.addEventListener('click',()=>{
+        var attr = element.children.item(0).getAttribute('src')
+        preview.setAttribute('src',attr);
+       // element.style.backgroundColor = "red"
+    })
+})
  img_border.forEach((element)=>{
     element.addEventListener('mouseenter',()=>{
         element.style.backgroundColor = '#6eb325'
@@ -137,6 +147,9 @@ const swiper = new Swiper('.swiper', {
           .sidebar('toggle')
           ;
           })
+          $('.menu .item')
+            .tab()
+            ;
   
         //   $('#cart-icon').mouseenter(()=>{
         //     $('.segment-cart').transition = '1s'

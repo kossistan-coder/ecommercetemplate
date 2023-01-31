@@ -125,6 +125,14 @@
     height: 12px;
  
 }
+.purple-label{
+    background-color: #8c4ad8;
+    padding: 7px;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+ 
+}
 .flex-inline{
     display: inline-flex;
   
@@ -495,11 +503,32 @@
     padding: 10px;
     margin-right: 5px;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 .product-card{
     background-color: #f0f1fa;
     border-radius: 10px;
+}
+.ui.bottom.attached.tab.segment{
+    background-color: transparent;
+    border-bottom: 1px dashed grey;
+    border-left: 1px dashed grey;
+    border-right: 1px dashed grey;
+    border-top:1px dashed grey !important;
+    margin-top: -14px;
+    background-color: #f0f1fa;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+   align-items: flex-start;
+   padding-left: 10%;
+
+}
+.list span{
+    color: blue;
+    font-weight: bold;
 }
 @media screen and (max-width:993px) {
     .grid-3{
